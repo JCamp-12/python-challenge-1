@@ -8,8 +8,6 @@
 * User is prompted for their menu item selection and it's saved as a variable menu_selection. (4 points)
 * User input menu_selection is checked as a number and an error is printed if it is not. (4 points)
 * menu_selection is converted to an integer. (2 points)
-
-
 * An if-else statement is used to check if menu_selection is in the menu_items keys, and an error is printed if it isn't. (4 points)
 * The item name of the customer's selection is extracted from the  menu_items dictionary and stored as a variable. (4 points)
 * The customer is prompted for a quantity of their item selection and the value defaults to 1 if the customer does not input a valid number. (10 points)

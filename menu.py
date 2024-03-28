@@ -130,7 +130,8 @@ while place_order:
                 # 4. Check if the menu selection is in the menu items
                 if menu_selection in menu_items.keys():
                     # Store the item name as a variable
-                    menu_category_name = menu_items[int(menu_category)]
+                    print('menu items" ', menu_items)
+                    menu_category_name = menu_items[int(menu_selection)]
                     print('menu cat name: ', menu_category_name)
                     # Ask the customer for the quantity of the menu item
                     quantity = input('How many ' + menu_category_name['Item name'] + 's: ')
@@ -153,7 +154,8 @@ while place_order:
                     print('order list: ', order_list)
 
                     # Tell the customer that their input isn't valid
-
+                else:
+                    print("You did not seelct a valid item number for this menu")
 
                 # Tell the customer they didn't select a menu option
             else:
@@ -171,30 +173,32 @@ while place_order:
 
     while True:
         # Ask the customer if they would like to order anything else
-        keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o ")
+        keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o ").lower()
 
         # 5. Check the customer's input
-
-                # Keep ordering
-
-                # Exit the keep ordering question loop
-
-                # Complete the order
-
+        match keep_ordering:
+            # Keep ordering
+            case 'y':
+                continue  
+            # Exit the keep ordering question loop
+            case 'n':
                 # Since the customer decided to stop ordering, thank them for
                 # their order
-
+                print("Thank you for your order!")
+                # Complete the order
+                place_order = False
                 # Exit the keep ordering question loop
-
-
+                break
+            case _:
                 # Tell the customer to try again
+                print("Invalid input, please try again.")
 
 
 # Print out the customer's order
 print("This is what we are preparing for you.\n")
 
 # Uncomment the following line to check the structure of the order
-#print(order)
+print(order_list)
 
 print("Item name                 | Price  | Quantity")
 print("--------------------------|--------|----------")
