@@ -118,15 +118,16 @@ while place_order:
                     }
                     i += 1
             # 2. Ask customer to input menu item number
-
+            menu_selection = input("Type menu selction number: ")
 
             # 3. Check if the customer typed a number
-
+            if menu_selection.isdigit():
                 # Convert the menu selection to an integer
-
-
+                
+                menu_selection = int(menu_selection)
+                print('menu selection after ', isinstance(menu_selection, int))
                 # 4. Check if the menu selection is in the menu items
-
+                
                     # Store the item name as a variable
 
 
