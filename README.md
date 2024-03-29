@@ -1,8 +1,8 @@
 # python-challenge-1
 
-# Requirements
+## Requirements
 
-## Order System (54 points)
+### Order System (54 points)
 
 * An order list is initialized. (2 points)
 * User is prompted for their menu item selection and it's saved as a variable menu_selection. (4 points)
@@ -15,7 +15,7 @@
 * A match-case statement is used to check if the customer would like to keep ordering, and performs the correct actions for y, n, and default cases. (10 points)
 * The match-case statement converts the use input to lowercase or uppercase before checking the case. (4 points)
 
-** Order Receipt (46 points)
+### Order Receipt (46 points)
 
 * A for loop is used to loop through the order list. (10 points)
 * The value of each key in each order dictionary is saved as a variable. (6 points)
