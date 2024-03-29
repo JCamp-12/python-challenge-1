@@ -210,15 +210,14 @@ for order in order_list:
     price = order['price']
     quantity = order['quantity']
     # print(f"Item: {item_name}, Price: {price}, Quantity: {quantity}")
+    
     # 8. Calculate the number of spaces for formatted printing
 
     print_statement_item_name_length = len("--------------------------|")
     print_statement_item_price_length = len("--------|")
-    print_statement_quantity_length = len("----------")
 
     length_of_item_name = len(item_name)
     length_of_price = len(str(price))
-    length_of_quantity = len(str(quantity))
 
 
     # print('Length of item name print statement', print_statement_item_name_length )
@@ -244,4 +243,4 @@ for item in order_list:
 cost_of_order = sum(item['item name'] for item in order_list)
 
 # Print updated cart items and total cart cost
-print(f"Total cart cost: {cost_of_order}")
+print(f"Total cart cost: {cost_of_order:.2f}")
